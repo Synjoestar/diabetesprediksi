@@ -76,7 +76,7 @@ Meskipun bukan gangguan klinis, istilah *pre-diabetes* sering digunakan. Kondisi
 - [Understanding diabetes mellitus: biochemical and clinical perspectives – ScienceDirect](https://www.sciencedirect.com/science/article/abs/pii/S1357303918302627)
 
 
-## 📌 Business Understanding
+##  Business Understanding
 
 ### Problem Statement
 Berdasarkan latar belakang permasalahan yang telah diuraikan sebelumnya, maka pada proyek ini dapat diambil rumusan masalah (*problem statements*) sebagai berikut : 
@@ -204,7 +204,7 @@ Dengan menggunakan confusion matrix, maka dapat diketahui seberapa baik performa
 
 Berdasarkan dengan konteks data, problem statement, dan solusi yang diimplementasikan, metrik evaluasi yang akan digunakan pada proyek machine learning ini adalah **Recall**. Recall adalah metrik yang digunakan untuk mengukur seberapa baik model dalam memprediksi suatu kelas tertentu. Recall dipilih dengan alasan bahwa algoritma machine learning / model memprediksi seseorang mengalami diabetes tetapi sebenarnya non-diabetes, daripada model salah memprediksi bahwa seseorang non-diabetes padahal sebenarnya dia adalah penderita diabetes.
 
-### 🏋️‍♂️ Training Set Performance
+###  Training Set Performance
 **Accuracy Score:** 98.70%
 
 **Classification Report:**
@@ -221,7 +221,7 @@ weighted avg       0.99      0.99      0.99       537
 
 ---
 
-### 🧪 Test Set Performance
+###  Test Set Performance
 **Accuracy Score:** 75.32%
 
 **Classification Report:**
