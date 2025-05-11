@@ -61,14 +61,16 @@ Model machine learning yang digunakan pada proyek ini adalah Random Forest, yang
 
 ## Evaluation
 
-Metrik yang digunakan untuk mengevaluasi model adalah **Akurasi**. Berdasarkan hasil evaluasi model, model menunjukkan hasil yang baik pada data pelatihan, tetapi performanya sedikit menurun pada data pengujian. 
+Pada proyek machine learning ini evaluasi model akan menggunakan **confusion matrix**. Confusion matrix memberi gambaran bagaimana performa model pada berbagai kelas. Ia menunjukkan berapa banyak jumlah prediksi yang benar (True) dan salah (False) untuk setiap label.
 
-- **Akurasi Pelatihan**: 98.70%
-- **Akurasi Pengujian**: 75.32%
+Dengan menggunakan confusion matrix, maka dapat diketahui seberapa baik performa dari model machine learning yang dikembangkan. Hasil dari confusion matrix ini akan digunakan untuk menghitung berbagai metrik lainnya, seperti accuracy, precision, recall, dan F1-score.
 
-Namun, meskipun model menunjukkan akurasi yang cukup tinggi pada data pelatihan, model perlu disesuaikan lebih lanjut untuk meningkatkan hasil pada data pengujian.
+- **Accuracy** — metrik evaluasi yang mengukur seberapa baik model membuat prediksi yang benar dari total prediksi yang dilakukan.
+- **Precision** — metrik evaluasi yang digunakan untuk mengukur berapa banyak model menghasilkan prediksi yang benar untuk suatu kelas tertentu. Precision didefinisikan sebagai perbandingan antara jumlah hasil prediksi yang benar untuk kelas tertentu dengan jumlah total prediksi untuk kelas tersebut.
+- **Recall** — metrik yang digunakan untuk mengukur seberapa baik model dalam memprediksi suatu kelas tertentu. Recall didefinisikan sebagai perbandingan antara jumlah hasil prediksi yang benar untuk kelas tertentu dengan jumlah total sampel pada kelas tersebut.
+- **F1-score** — merupakan kombinasi antara nilai precision dan recall dari suatu kelas tertentu.
 
-## Kesimpulan
+Berdasarkan dengan konteks data, problem statement, dan solusi yang diimplementasikan, metrik evaluasi yang akan digunakan pada proyek machine learning ini adalah **Recall**. Recall adalah metrik yang digunakan untuk mengukur seberapa baik model dalam memprediksi suatu kelas tertentu. Recall dipilih dengan alasan bahwa algoritma machine learning / model memprediksi seseorang mengalami diabetes tetapi sebenarnya non-diabetes, daripada model salah memprediksi bahwa seseorang non-diabetes padahal sebenarnya dia adalah penderita diabetes.
 
-Berdasarkan hasil evaluasi model, model ini cukup baik dalam memprediksi diabetes pada dataset ini. Namun, ada ruang untuk perbaikan dalam hal generalisasi pada data yang lebih luas atau data yang belum pernah dilihat sebelumnya.
-
+### Train Accuracy Score: 98.70%
+**CLASSIFICATION REPORT**:
