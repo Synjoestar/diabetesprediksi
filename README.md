@@ -45,11 +45,41 @@ Link dataset: [Diabetes Dataset](https://www.kaggle.com/datasets/whenamancodes/p
 | **Outcome**                  | Hasil diagnosa (1 = Mengidap diabetes, 0 = Tidak mengidap diabetes) |
 
 ## Data Preparation
+*Data preparation* adalah proses mempersiapkan data mentah menjadi format yang sesuai untuk analisis atau pemrosesan lebih lanjut. Berikut adalah beberapa teknik atau metode yang digunakan dalam persiapan data pada proyek ini:
 
-Pada tahap ini, data yang digunakan telah diproses melalui beberapa tahapan, termasuk:
-- Mengatasi nilai yang hilang (missing values).
-- Melakukan normalisasi pada beberapa fitur numerik seperti Glucose, BloodPressure, BMI, dll.
-- Pembagian data menjadi set pelatihan (training set) dan set pengujian (test set).
+1. **Handling missing value** 
+	- *Missing value* merupakan salah satu masalah yang paling sering dijumpai dalam proyek analisis data di industri. Masalah ini muncul karena adanya nilai yang hilang dari sebuah data dan biasanya direpresentasikan sebagai nilai NaN dalam library pandas. Hal ini biasanya terjadi karena adanya *human error*, masalah privasi, proses *merging/join*, dll. 
+	- Tujuan dari langkah ini adalah untuk memastikan keakuratan dan keandalan data yang digunakan untuk analisis atau pemodelan. *Missing value* dapat menyebabkan bias dan kesalahan dalam analisis data, sehingga penting untuk mengidentifikasi dan mengatasi nilai yang hilang ini agar hasil analisis menjadi lebih akurat dan dapat diandalkan.
+	- Terdapat beberapa cara atau metode yang dapat digunakan  untuk menangani *missing value*, yaitu *Dropping*, *Imputation*, *Interpolation*, dan lainnya. 
+		
+2. **Handling duplicated data**
+	- *Duplicated data* adalah masalah lain yang umum dijumpai di industri. Ia terjadi ketika terdapat sebuah observasi (semua nilai dalam satu unit baris) yang memiliki nilai yang sama persis pada setiap kolomnya. 
+	-  Tujuan dari langkah ini adalah untuk memastikan integritas data. *Duplicated data* dapat mempengaruhi analisis data dan membuat hasil yang tidak akurat. Oleh karena itu, dengan mengidentifikasi dan menghapus data yang terduplikat, dapat memastikan bahwa data yang digunakan untuk analisis atau pemodelan adalah data yang valid dan representatif.
+	-  Salah satu teknik yang dapat digunakan dalam mengatasi *duplicated data* adalah dengan menghapus data yang terduplikat (*dropping*).
+
+3. **Handling outliers**
+	- *Outliers* adalah nilai yang jauh berbeda dari nilai lainnya dalam kumpulan data. Nilai ini muncul sebagai pengecualian dalam pola data yang ada. Nilai yang ada di *outlier* bisa jauh lebih tinggi maupun lebih rendah dibandingkan dengan nilai-nilai lain dalam dataset. Outlier bisa terjadi karena berbagai alasan, termasuk kesalahan pengukuran, kejadian langka, atau karena faktor lain yang tidak terduga. 
+	- Tujuan dari langkah ini  adalah untuk memastikan bahwa *outlier* tidak mempengaruhi analisis statistik yang dilakukan atau model machine learning yang dibangun. Outliers memiliki potensi untuk memberikan informasi yang salah atau mengganggu hasil analisis, sehingga penting untuk mengatasi mereka agar hasil analisis menjadi lebih akurat dan dapat dipercaya.
+	- Terdapat beberapa cara atau langkah yang dapat diterapkan dalam menangani outliers, yaitu meliputi identifikasi *outliers*, transformasi data, menghapus *outliers*, dan *imputation*. Pada proyek ini penanganan *outliers* dilakukan dengan menggunakan metode *imputation*, dengan menggunakan *IQR method*. Hasil dari metode *imputation* pada proyek ini  dapat dilihat pada gambar 5 berikut : 
+
+		
+
+4. **Standardization**
+	- Standardisasi adalah proses mengubah data sehingga memiliki rata-rata (*mean*) nol dan varians (*variance*) satu. 
+	-  Tujuan dari standardisasi adalah untuk membuat distribusi data lebih terpusat di sekitar nilai nol dengan variabilitas yang seragam, yang dapat membantu algoritma machine learning memahami dan memproses data dengan lebih baik.
+	-  Teknik yang digunakan adalah dengan mengurangi nilai setiap fitur dengan rerata dari fitur tersebut, dan kemudian membaginya dengan standar deviasi dari fitur tersebut. Dalam kasus ini, *StandardScaler scikit-learn* digunakan untuk menstandarisasi *skor z*.
+
+5. **Handling imbalanced data**
+	- *Imbalanced data* merupakan sebuah kondisi di mana distribusi dari kelas yang terdapat pada dataset tidak seimbang jumlahnya. 
+	- Tujuan dari menangani imbalanced data adalah untuk meningkatkan performa model dalam memprediksi kelas minoritas.
+	- Terdapat beberapa cara atau metode yang dapat digunakan untuk menangani *imbalanced data*. Pertama, *oversampling* yaitu memperbanyak sampel dari kelas minoritas sehingga jumlahnya seimbang dengan kelas mayoritas. Ini dapat dilakukan dengan menggandakan sampel yang ada atau dengan membuat sampel sintetis baru. Cara lainnya, *undersampling* yaitu mengurangi jumlah sampel dari kelas mayoritas sehingga jumlahnya seimbang dengan kelas minoritas. Ini dapat dilakukan dengan menghapus sebagian sampel dari kelas mayoritas. Pada proyek ini penanganan *imbalanced data* dilakukan dengan metode *SMOTE* (*Synthetic Minority Over-sampling Technique*): *SMOTE* digunakan untuk membuat sampel sintetis dari kelas minoritas (dalam hal ini, kelas "1" dari kolom '*Outcome*') sehingga jumlahnya seimbang dengan kelas mayoritas. Hal ini membantu mencegah bias pada model machine learning ke kelas mayoritas dan meningkatkan kinerja model untuk kelas minoritas.  
+
+	
+
+6. **Data Splitting**
+	- Data Splitting  adalah proses membagi *dataset* menjadi dua atau lebih bagian yang berbeda untuk digunakan dalam tahapan tertentu dari proses analisis data, seperti pelatihan model, validasi model, dan pengujian model.	
+	- Tujuan dari langkah ini adalah pembagian data menjadi menjadi dua bagian: satu untuk melatih model (set pelatihan) dan yang lainnya untuk menguji model (set pengujian).
+	-  Teknik yang digunakan adalah dengan menggunakan metode *Train-test split*.
 
 ## Modeling
 
