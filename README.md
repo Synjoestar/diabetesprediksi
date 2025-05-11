@@ -2,11 +2,10 @@
 
 ## Domain Proyek
 
-Diabetes merupakan penyakit kronis yang mempengaruhi cara tubuh memproses gula darah (glukosa). Ada dua jenis utama diabetes, yaitu diabetes tipe 1 dan diabetes tipe 2. Diabetes tipe 2 adalah bentuk yang lebih umum, di mana tubuh tidak dapat menggunakan insulin dengan efektif, atau tidak cukup memproduksi insulin. Hal ini dapat menyebabkan kadar glukosa darah tinggi yang berbahaya. Untuk menangani masalah ini, deteksi dini diabetes sangat penting untuk mengurangi risiko komplikasi jangka panjang, seperti penyakit jantung, stroke, dan gangren. Oleh karena itu, klasifikasi diabetes berdasarkan data medis menjadi langkah penting dalam mengurangi dampak penyakit ini.
+## Latar Belakang
 
-Sumber referensi:  
-- [World Health Organization (WHO) - Diabetes Fact Sheet](http://who.int/news-room/fact-sheets/detail/diabetes)  
-- [NHLBI - What is Diabetes? Fact Sheet](https://www.nhlbi.nih.gov/resources/what-diabetes-fact-sheet)
+Peningkatan prevalensi penyakit degeneratif seperti Diabetes Mellitus (DM) di Indonesia, khususnya di daerah perkotaan, dipicu oleh perubahan gaya hidup dan sosial ekonomi akibat urbanisasi dan modernisasi. DM, yang terbagi menjadi tipe 1 dan tipe 2, merupakan penyakit kronis yang dipengaruhi oleh faktor keturunan, pola makan buruk, kurangnya aktivitas fisik, dan gaya hidup tidak sehat. Indonesia menempati peringkat ke-7 dunia dalam jumlah penderita diabetes dengan 10,8 juta kasus pada tahun 2020, dan jumlah ini diperkirakan terus meningkat. DM yang tidak tertangani dengan baik dapat menimbulkan komplikasi serius seperti gagal ginjal dan penyakit jantung. Namun, 80% kasus diabetes masih dapat dicegah melalui pola hidup sehat. Oleh karena itu, proyek ini dikembangkan untuk mengidentifikasi individu berisiko tinggi terkena diabetes menggunakan analisis prediktif terhadap berbagai faktor risiko, sebagai upaya mendukung pencegahan dan pengendalian diabetes di Indonesia.
+
 
 ## 📌 Business Understanding
 
