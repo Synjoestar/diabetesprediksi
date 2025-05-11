@@ -8,22 +8,28 @@ Sumber referensi:
 - [World Health Organization (WHO) - Diabetes Fact Sheet](http://who.int/news-room/fact-sheets/detail/diabetes)  
 - [NHLBI - What is Diabetes? Fact Sheet](https://www.nhlbi.nih.gov/resources/what-diabetes-fact-sheet)
 
-## Business Understanding
+## 📌 Business Understanding
 
-### Problem Statements
-
-- Bagaimana cara mendeteksi pasien yang berisiko tinggi mengidap diabetes berdasarkan data medis?
-- Bagaimana kita bisa menggunakan model machine learning untuk memprediksi kemungkinan seseorang mengidap diabetes?
+### Problem Statement
+Berdasarkan latar belakang permasalahan yang telah diuraikan sebelumnya, maka pada proyek ini dapat diambil rumusan masalah (*problem statements*) sebagai berikut : 
+1. Bagaimana memprediksi penyakit diabetes melitus dengan menggunakan algoritma machine learning?
+2. Bagaimana mengembangkan model machine learning yang dapat digunakan untuk memprediksi penyakit diabetes? 
+3. Bagaimana performa atau evaluasi dari model machine learning yang telah dikembangkan untuk memprediksi penyakit diabetes?
+  
 
 ### Goals
-
-- Membangun model machine learning yang dapat mengklasifikasikan apakah seseorang mengidap diabetes atau tidak berdasarkan data medis.
-- Meningkatkan akurasi prediksi dengan model yang terlatih.
+Berdasarkan rumusan masalah (*problems statement*) yang telah dirumuskan sebelumnya, maka berikut adalah tujuan (*goals*) dari proyek machine learning ini :
+1. Mengetahui penerapan algoritma machine learning dalam memprediksi penyakit diabetes melitus.
+2. Mengetahui rangkaian proses pengembangan model machine learning dari awal hingga selesai dalam memprediksi penyakit diabetes melitus.
+3. Mengetahui performa atau evaluasi dari model machine learning yang telah dikembangkan untuk memprediksi penyakit diabetes.
 
 ### Solution Statements
-
-- Menggunakan algoritma klasifikasi seperti Logistic Regression, Decision Tree, atau Random Forest untuk membangun model prediksi.
-- Melakukan hyperparameter tuning untuk meningkatkan kinerja model dan akurasi prediksi.
+Berdasarkan *problem statements* dan *goals* yang telah disebutkan sebelumnya, maka berikut adalah *solution statements* pada proyek machine learning ini : 
+1.   Melakukan proses pengembangan model *machine learning* dari awal hingga selesai, meliputi *data wrangling*, *Exploratory Data  Analysis* (EDA), *modelling*, dan *evaluation*.
+2. Pengembangan model *machine learning* (*modelling*) menggunakan algoritma yang sesuai dengan permasalahan, yaitu algoritma klasifikasi untuk memprediksi kelas (diabetes / non-diabetes) dengan menggunakan dataset yang telah ditentukan. Algoritma machine learning yang digunakan pada proyek ini diantaranya yaitu : 
+	- *Random Forest Classification* : algoritma ensemble (group) learning, yang terdiri dari banyak pohon keputusan (decision tree) yang bekerja bersama untuk meningkatkan kinerja dan akurasi prediksi.
+	- *Hyperparameter Tuning* dengan *Search Grid* : untuk memperoleh konfigurasi yang paling optimal untuk melatih model machine learning. 
+3. Melakukan *evaluation model* untuk mengetahui performa model dengan menggunakan metriks evaluasi yang sudah ditentukan. *Evaluation* model dilakukan untuk mengetahui performa dari model yang telah dikembangkan dalam memprediksi penyakit diabetes. Sehingga dapat diketahui model *machine learning* yang terbaik untuk digunakan dalam memprediksi penyakit diabetes.
 
 ## Data Understanding
 
