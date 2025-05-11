@@ -4,7 +4,76 @@
 
 ## Latar Belakang
 
-Peningkatan prevalensi penyakit degeneratif seperti Diabetes Mellitus (DM) di Indonesia, khususnya di daerah perkotaan, dipicu oleh perubahan gaya hidup dan sosial ekonomi akibat urbanisasi dan modernisasi. DM, yang terbagi menjadi tipe 1 dan tipe 2, merupakan penyakit kronis yang dipengaruhi oleh faktor keturunan, pola makan buruk, kurangnya aktivitas fisik, dan gaya hidup tidak sehat. Indonesia menempati peringkat ke-7 dunia dalam jumlah penderita diabetes dengan 10,8 juta kasus pada tahun 2020, dan jumlah ini diperkirakan terus meningkat. DM yang tidak tertangani dengan baik dapat menimbulkan komplikasi serius seperti gagal ginjal dan penyakit jantung. Namun, 80% kasus diabetes masih dapat dicegah melalui pola hidup sehat. Oleh karena itu, proyek ini dikembangkan untuk mengidentifikasi individu berisiko tinggi terkena diabetes menggunakan analisis prediktif terhadap berbagai faktor risiko, sebagai upaya mendukung pencegahan dan pengendalian diabetes di Indonesia.
+**Diabetes mellitus** merupakan kumpulan gangguan autoimun, metabolik, dan genetik yang memiliki satu ciri utama yaitu *hiperglikemia* (kadar gula darah tinggi). Cara pengukuran glukosa plasma dan ambang batas yang digunakan untuk menentukan kadar normal atau abnormal telah mengalami beberapa perubahan dalam beberapa dekade terakhir. Artikel ini mengulas rekomendasi-rekomendasi tersebut dan definisi terkini mengenai diabetes mellitus serta kondisi hiperglikemia tingkat menengah. Juga dibahas perbedaan pendekatan antara Amerika Serikat dan wilayah lain di dunia.
+
+---
+
+### Apa itu Diabetes?
+
+Diabetes mellitus bukanlah satu penyakit tunggal, melainkan serangkaian kondisi metabolik yang ditandai dengan hiperglikemia akibat kekurangan insulin sebagian atau seluruhnya. Hiperglikemia kronis dapat menyebabkan komplikasi mikro-vaskular seperti:
+
+- Kerusakan retina
+- Kerusakan ginjal
+- Gangguan pada saraf perifer
+
+Meskipun komplikasi ini khas pada diabetes, mereka **tidak digunakan sebagai dasar diagnosis** karena munculnya yang terlalu lambat.
+
+---
+
+### Bagaimana Diabetes Diklasifikasikan?
+
+Terdapat **empat kategori utama** diabetes mellitus:
+
+1. **Diabetes tipe 1**  
+   - Sel β pankreas dihancurkan, biasanya oleh mekanisme inflamasi autoimun.  
+   - Penanda autoimun dalam serum termasuk:  
+     - Antibodi sel islet  
+     - Antibodi terhadap GAD  
+     - Insulin  
+     - IA-2 dan IA-2β  
+     - Transporter seng ZnT8  
+   - Proses ini biasanya menyebabkan kekurangan insulin absolut.
+
+2. **Diabetes tipe 2**
+
+3. **Tipe khusus lainnya**
+
+4. **Diabetes gestasional**
+
+---
+
+### Bagaimana Diagnosis Diabetes Dibuat?
+
+Diagnosis diabetes dapat ditegakkan berdasarkan salah satu dari kriteria berikut:
+
+- Glukosa plasma acak **≥11,1 mmol/l** dengan gejala klasik hiperglikemia seperti:
+  - Sering haus (*polidipsia*)
+  - Sering buang air kecil (*poliuria*)
+  - Penurunan berat badan (biasanya tanda kekurangan insulin)
+  
+- Glukosa plasma puasa (tidak makan selama minimal 8 jam) **≥7,0 mmol/l**
+
+- Glukosa plasma **≥11,1 mmol/l** dua jam setelah pemberian beban glukosa
+
+---
+
+### Apa itu Pre-Diabetes?
+
+Kondisi antara normal dan diabetes disebut sebagai:
+
+- **Impaired Fasting Glucose (IFG)**
+- **Impaired Glucose Tolerance (IGT)**
+
+Meskipun bukan gangguan klinis, istilah *pre-diabetes* sering digunakan. Kondisi ini penting karena:
+
+- Menjadi indikator risiko kuat terhadap perkembangan diabetes di masa depan
+- Risiko kardiovaskular yang meningkat juga terlihat pada rentang ini
+
+---
+
+### Referensi
+
+- [Understanding diabetes mellitus: biochemical and clinical perspectives – ScienceDirect](https://www.sciencedirect.com/science/article/abs/pii/S1357303918302627)
 
 
 ## 📌 Business Understanding
