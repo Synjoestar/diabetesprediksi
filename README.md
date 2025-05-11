@@ -57,7 +57,7 @@ Pada proyek ini algoritma machine learning yang digunakan di antaranya yaitu *`R
 
 ### Random Forest Classification
 *Random Forest Classification* termasuk algoritma *supervised learning* yang dapat digunakan untuk permasalahan *classification*. *Random forest* termasuk dalam salah satu kategori *ensemble* (group) *learning*, yang terdiri dari banyak pohon keputusan (*decision* *tree*) yang bekerja bersama untuk meningkatkan kinerja dan akurasi prediksi. Pada model *machine learning ensemble*, setiap model harus membuat prediksi secara independen. Kemudian, prediksi dari setiap *model ensemble* ini digabungkan untuk membuat prediksi akhir. *Algoritma Random Forest* mengkombinasikan hasil prediksi dari berbagai *model decision tree* yang dibuat secara acak. 
-<p align='center'><img src="https://github.com/SyarifulMsth/predictive-analytics-of-diabetes/blob/main/image/random%20forest.png?raw=true"  width="500"></p>
+
 
   
 **Kelebihan** : 
