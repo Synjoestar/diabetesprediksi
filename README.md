@@ -72,5 +72,34 @@ Dengan menggunakan confusion matrix, maka dapat diketahui seberapa baik performa
 
 Berdasarkan dengan konteks data, problem statement, dan solusi yang diimplementasikan, metrik evaluasi yang akan digunakan pada proyek machine learning ini adalah **Recall**. Recall adalah metrik yang digunakan untuk mengukur seberapa baik model dalam memprediksi suatu kelas tertentu. Recall dipilih dengan alasan bahwa algoritma machine learning / model memprediksi seseorang mengalami diabetes tetapi sebenarnya non-diabetes, daripada model salah memprediksi bahwa seseorang non-diabetes padahal sebenarnya dia adalah penderita diabetes.
 
-### Train Accuracy Score: 98.70%
-**CLASSIFICATION REPORT**:
+### 🏋️‍♂️ Training Set Performance
+**Accuracy Score:** 98.70%
+
+**Classification Report:**
+```
+              precision    recall  f1-score   support
+
+           0       0.98      1.00      0.99       349
+           1       1.00      0.96      0.98       188
+
+    accuracy                           0.99       537
+   macro avg       0.99      0.98      0.99       537
+weighted avg       0.99      0.99      0.99       537
+```
+
+---
+
+### 🧪 Test Set Performance
+**Accuracy Score:** 75.32%
+
+**Classification Report:**
+```
+              precision    recall  f1-score   support
+
+           0       0.82      0.79      0.81       151
+           1       0.64      0.68      0.65        80
+
+    accuracy                           0.75       231
+   macro avg       0.73      0.73      0.73       231
+weighted avg       0.76      0.75      0.75       231
+```
