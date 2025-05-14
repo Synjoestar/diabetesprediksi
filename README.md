@@ -148,23 +148,29 @@ Visualisasi boxplot di atas dilakukan untuk mengidentifikasi apakah terdapat pen
 1. **Handling outliers**
 	- *Outliers* adalah nilai yang jauh berbeda dari nilai lainnya dalam kumpulan data. Nilai ini muncul sebagai pengecualian dalam pola data yang ada. Nilai yang ada di *outlier* bisa jauh lebih tinggi maupun lebih rendah dibandingkan dengan nilai-nilai lain dalam dataset. Outlier bisa terjadi karena berbagai alasan, termasuk kesalahan pengukuran, kejadian langka, atau karena faktor lain yang tidak terduga. 
 	- Tujuan dari langkah ini  adalah untuk memastikan bahwa *outlier* tidak mempengaruhi analisis statistik yang dilakukan atau model machine learning yang dibangun. Outliers memiliki potensi untuk memberikan informasi yang salah atau mengganggu hasil analisis, sehingga penting untuk mengatasi mereka agar hasil analisis menjadi lebih akurat dan dapat dipercaya.
-	- Terdapat beberapa cara atau langkah yang dapat diterapkan dalam menangani outliers, yaitu meliputi identifikasi *outliers*, transformasi data, menghapus *outliers*, dan *imputation*. Pada proyek ini penanganan *outliers* dilakukan dengan menggunakan metode *imputation*, dengan menggunakan *IQR method*. Hasil dari metode *imputation* pada proyek ini  dapat dilihat pada gambar 5 berikut : 
+	- Terdapat beberapa cara atau langkah yang dapat diterapkan dalam menangani outliers, yaitu meliputi identifikasi *outliers*, transformasi data, menghapus *outliers*, dan *imputation*. Pada proyek ini penanganan *outliers* dilakukan dengan menggunakan metode *imputation*, dengan menggunakan *IQR method*. Hasil dari metode *imputation* pada proyek ini  dapat dilihat pada gambar 5 berikut :
+
+<p align='center'>Gambar 5. handling outliers</p>
+<p align='center'><img src ="https://raw.githubusercontent.com/Synjoestar/diabetesprediksi/main/images/5.png?raw=true"  width="400"></p>
 
 
 2. **Data Splitting**
 	- Data Splitting  adalah proses membagi *dataset* menjadi dua atau lebih bagian yang berbeda untuk digunakan dalam tahapan tertentu dari proses analisis data, seperti pelatihan model, validasi model, dan pengujian model.	
 	- Tujuan dari langkah ini adalah pembagian data menjadi menjadi dua bagian: satu untuk melatih model (set pelatihan) dan yang lainnya untuk menguji model (set pengujian).
-	-  Teknik yang digunakan adalah dengan menggunakan metode *Train-test split*.		
+	-  Teknik yang digunakan adalah dengan menggunakan metode *Train-test split*.
+	
+5. **Handling imbalanced data**
+	- *Imbalanced data* merupakan sebuah kondisi di mana distribusi dari kelas yang terdapat pada dataset tidak seimbang jumlahnya. 
+	- Tujuan dari menangani imbalanced data adalah untuk meningkatkan performa model dalam memprediksi kelas minoritas.
+	- Terdapat beberapa cara atau metode yang dapat digunakan untuk menangani *imbalanced data*. Pertama, *oversampling* yaitu memperbanyak sampel dari kelas minoritas sehingga jumlahnya seimbang dengan kelas mayoritas. Ini dapat dilakukan dengan menggandakan sampel yang ada atau dengan membuat sampel sintetis baru. Cara lainnya, *undersampling* yaitu mengurangi jumlah sampel dari kelas mayoritas sehingga jumlahnya seimbang dengan kelas minoritas. Ini dapat dilakukan dengan menghapus sebagian sampel dari kelas mayoritas. Pada proyek ini penanganan *imbalanced data* dilakukan dengan metode *SMOTE* (*Synthetic Minority Over-sampling Technique*): *SMOTE* digunakan untuk membuat sampel sintetis dari kelas minoritas (dalam hal ini, kelas "1" dari kolom '*Outcome*') sehingga jumlahnya seimbang dengan kelas mayoritas. Hal ini membantu mencegah bias pada model machine learning ke kelas mayoritas dan meningkatkan kinerja model untuk kelas minoritas.  
+
+<p align='center'>Gambar 6. Imbalanced data</p>
+<p align='center'><img src ="https://raw.githubusercontent.com/Synjoestar/diabetesprediksi/main/images/7.png?raw=true"  width="400"></p>
 
 3. **Standardization**
 	- Standardisasi adalah proses mengubah data sehingga memiliki rata-rata (*mean*) nol dan varians (*variance*) satu. 
 	-  Tujuan dari standardisasi adalah untuk membuat distribusi data lebih terpusat di sekitar nilai nol dengan variabilitas yang seragam, yang dapat membantu algoritma machine learning memahami dan memproses data dengan lebih baik.
 	-  Teknik yang digunakan adalah dengan mengurangi nilai setiap fitur dengan rerata dari fitur tersebut, dan kemudian membaginya dengan standar deviasi dari fitur tersebut. Dalam kasus ini, *StandardScaler scikit-learn* digunakan untuk menstandarisasi *skor z*.
-
-4. **Handling imbalanced data**
-	- Imbalanced data merupakan sebuah kondisi di mana distribusi dari kelas yang terdapat pada dataset tidak seimbang jumlahnya.
-	- Tujuan dari menangani imbalanced data adalah untuk meningkatkan performa model dalam memprediksi kelas minoritas.
-	- Terdapat beberapa cara atau metode yang dapat digunakan untuk menangani imbalanced data. Pertama, oversampling yaitu memperbanyak sampel dari kelas minoritas sehingga jumlahnya seimbang dengan kelas mayoritas. Ini dapat dilakukan dengan menggandakan sampel yang ada atau dengan membuat sampel sintetis baru. Cara lainnya, undersampling yaitu mengurangi jumlah sampel dari kelas mayoritas sehingga jumlahnya seimbang dengan kelas minoritas. Ini dapat dilakukan dengan menghapus sebagian sampel dari kelas mayoritas. Pada proyek ini penanganan imbalanced data dilakukan dengan metode SMOTE (Synthetic Minority Over-sampling Technique): SMOTE digunakan untuk membuat sampel sintetis dari kelas minoritas (dalam hal ini, kelas "1" dari kolom 'Outcome') sehingga jumlahnya seimbang dengan kelas mayoritas. Hal ini membantu mencegah bias pada model machine learning ke kelas mayoritas dan meningkatkan kinerja model untuk kelas minoritas.
 	
 
 ## Modeling
