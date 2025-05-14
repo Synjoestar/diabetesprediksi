@@ -118,6 +118,30 @@ Link dataset: [Diabetes Dataset](https://www.kaggle.com/datasets/whenamancodes/p
 | **Age**                      | Usia pasien (dalam tahun)                                           |
 | **Outcome**                  | Hasil diagnosa (1 = Mengidap diabetes, 0 = Tidak mengidap diabetes) |
 
+
+### Visualization & Analysis 
+- **Univariate Analysis**
+<p align='center'><img src =""  width="300"></p>
+<p align='center'>Gambar 1. Pie-Chart Diabetes & Non-Diabetes</p> 
+Berdasarkan visualisasi grafik *pie-chart* pada gambar 1 di atas menunjukkan bahwa jumlah penderita penyakit diabetes yaitu 268 orang (34,9 %). Sedangkan jumlah orang yang non-diabetes yaitu  500 orang (65,1%) dari total keseluruhan jumlah orang dalam dataset (768 orang).
+ 
+<p align='center'><img src =""  width="400"></p>
+<p align='center'>Gambar 2. Visualisasi feature numerik</p>
+<br>
+Berdasarkan visualisasi untuk *feature* numerik pada dataset yang dapat dilihat pada histogram di atas, dapat diketahui beberapa informasi, yaitu : sebagaian besar orang memiliki glukosa dengan tingkat 100-150; sebagian besar orang memiliki *BloodPressure* pada tingkat 60-90; sebagian besar orang memiliki BMI berkisar dari 25-40; sebagian besar orang memiliki *DiabetesPedigreeFunction* berkisar dari 0.0 hingga 0.75; dan sebagian besar orang berumur 20-30 tahun. <br><br>
+
+- **Multivariate Analysis**<br>
+Berdasarkan visualisasi pada gambar 3 di bawah menunjukkan relasi antar feature pada dataset. Apabila diperhatikan korelasi antar feature pada dataset beragam, terdapat korelasi yang lemah (atau tidak ada korelasi sama sekali) dan beberapa feature yang berkorelasi meskipun tidak terlalu kuat. 
+<p align='center'>Gambar 3. Visualisasi multivariate analysis</p>
+<p align='center'><img src =""  width="400"></p>
+
+- **Outliers**
+Visualisasi boxplot di atas dilakukan untuk mengidentifikasi apakah terdapat pencilan (outliers) pada dataset yang digunakan pada proyek machine learning. Karena apabila terdapat outliers pada dataset dapat menyebabkan bias atau ketidakakuratan model dalam memprediksi. 
+
+<p align='center'>Gambar 4. Mengecek outliers</p>
+<p align='center'><img src =""  width="400"></p>
+
+
 ## Data Preparation
 *Data preparation* adalah proses mempersiapkan data mentah menjadi format yang sesuai untuk analisis atau pemrosesan lebih lanjut. Berikut adalah beberapa teknik atau metode yang digunakan dalam persiapan data pada proyek ini:
 
@@ -251,7 +275,7 @@ weighted avg       0.76      0.75      0.75       231
 
 ---
 
-## 🧠 Kesimpulan
+##  Kesimpulan
 
 * **Tuning model berdampak besar terhadap performa pada data training** — dari 87% ke 98%, menunjukkan bahwa model jadi lebih "paham" terhadap pola data.
 * **Namun pada data test**, kenaikan akurasi hanya sedikit. Artinya:
