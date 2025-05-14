@@ -121,7 +121,7 @@ Link dataset: [Diabetes Dataset](https://www.kaggle.com/datasets/whenamancodes/p
 
 ### Visualization & Analysis 
 - **Univariate Analysis**
-<p align='center'><img src ="[https://raw.githubusercontent.com/Synjoestar/diabetesprediksi/main/images/1.png?raw=true](https://raw.githubusercontent.com/Synjoestar/diabetesprediksi/refs/heads/main/images/1.png?token=GHSAT0AAAAAADDHT5MWYF4OQVSQUEAWMRYO2BD7D2Q)" width="300"></p>
+<p align='center'><img src ="https://raw.githubusercontent.com/Synjoestar/diabetesprediksi/main/images/1.png?raw=true" width="300"></p>
 <p align='center'>Gambar 1. Pie-Chart Diabetes & Non-Diabetes</p> 
 Berdasarkan visualisasi grafik *pie-chart* pada gambar 1 di atas menunjukkan bahwa jumlah penderita penyakit diabetes yaitu 268 orang (34,9 %). Sedangkan jumlah orang yang non-diabetes yaitu  500 orang (65,1%) dari total keseluruhan jumlah orang dalam dataset (768 orang).
  
