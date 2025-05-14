@@ -101,7 +101,7 @@ Berdasarkan *problem statements* dan *goals* yang telah disebutkan sebelumnya, m
 
 ## Data Understanding
 
-Dataset yang digunakan dalam proyek ini adalah dataset diabetes yang memuat informasi medis pasien, termasuk beberapa parameter penting seperti kadar glukosa, tekanan darah, BMI, dan lainnya. Dataset ini mengandung data tentang apakah seseorang mengidap diabetes (Outcome 1) atau tidak (Outcome 0).
+Dataset yang digunakan dalam proyek ini adalah dataset diabetes yang memuat informasi medis pasien, termasuk beberapa parameter penting seperti kadar glukosa, tekanan darah, BMI, dan lainnya. Dataset ini mengandung data tentang apakah seseorang mengidap diabetes (Outcome 1) atau tidak (Outcome 0). Dataset tersebut berformat csv (comma-separated values) dengan ukuran 23.88 kB. Dataset tersebut terdiri dari 768 data records dengan 9 feature column.
 
 Link dataset: [Diabetes Dataset](https://www.kaggle.com/datasets/whenamancodes/predict-diabities)
 
