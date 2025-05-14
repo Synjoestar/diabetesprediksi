@@ -126,24 +126,17 @@ Link dataset: [Diabetes Dataset](https://www.kaggle.com/datasets/whenamancodes/p
 	- Tujuan dari langkah ini  adalah untuk memastikan bahwa *outlier* tidak mempengaruhi analisis statistik yang dilakukan atau model machine learning yang dibangun. Outliers memiliki potensi untuk memberikan informasi yang salah atau mengganggu hasil analisis, sehingga penting untuk mengatasi mereka agar hasil analisis menjadi lebih akurat dan dapat dipercaya.
 	- Terdapat beberapa cara atau langkah yang dapat diterapkan dalam menangani outliers, yaitu meliputi identifikasi *outliers*, transformasi data, menghapus *outliers*, dan *imputation*. Pada proyek ini penanganan *outliers* dilakukan dengan menggunakan metode *imputation*, dengan menggunakan *IQR method*. Hasil dari metode *imputation* pada proyek ini  dapat dilihat pada gambar 5 berikut : 
 
-		
 
-2. **Standardization**
+2. **Data Splitting**
+	- Data Splitting  adalah proses membagi *dataset* menjadi dua atau lebih bagian yang berbeda untuk digunakan dalam tahapan tertentu dari proses analisis data, seperti pelatihan model, validasi model, dan pengujian model.	
+	- Tujuan dari langkah ini adalah pembagian data menjadi menjadi dua bagian: satu untuk melatih model (set pelatihan) dan yang lainnya untuk menguji model (set pengujian).
+	-  Teknik yang digunakan adalah dengan menggunakan metode *Train-test split*.		
+
+3. **Standardization**
 	- Standardisasi adalah proses mengubah data sehingga memiliki rata-rata (*mean*) nol dan varians (*variance*) satu. 
 	-  Tujuan dari standardisasi adalah untuk membuat distribusi data lebih terpusat di sekitar nilai nol dengan variabilitas yang seragam, yang dapat membantu algoritma machine learning memahami dan memproses data dengan lebih baik.
 	-  Teknik yang digunakan adalah dengan mengurangi nilai setiap fitur dengan rerata dari fitur tersebut, dan kemudian membaginya dengan standar deviasi dari fitur tersebut. Dalam kasus ini, *StandardScaler scikit-learn* digunakan untuk menstandarisasi *skor z*.
-
-3. **Handling imbalanced data**
-	- *Imbalanced data* merupakan sebuah kondisi di mana distribusi dari kelas yang terdapat pada dataset tidak seimbang jumlahnya. 
-	- Tujuan dari menangani imbalanced data adalah untuk meningkatkan performa model dalam memprediksi kelas minoritas.
-	- Terdapat beberapa cara atau metode yang dapat digunakan untuk menangani *imbalanced data*. Pertama, *oversampling* yaitu memperbanyak sampel dari kelas minoritas sehingga jumlahnya seimbang dengan kelas mayoritas. Ini dapat dilakukan dengan menggandakan sampel yang ada atau dengan membuat sampel sintetis baru. Cara lainnya, *undersampling* yaitu mengurangi jumlah sampel dari kelas mayoritas sehingga jumlahnya seimbang dengan kelas minoritas. Ini dapat dilakukan dengan menghapus sebagian sampel dari kelas mayoritas. Pada proyek ini penanganan *imbalanced data* dilakukan dengan metode *SMOTE* (*Synthetic Minority Over-sampling Technique*): *SMOTE* digunakan untuk membuat sampel sintetis dari kelas minoritas (dalam hal ini, kelas "1" dari kolom '*Outcome*') sehingga jumlahnya seimbang dengan kelas mayoritas. Hal ini membantu mencegah bias pada model machine learning ke kelas mayoritas dan meningkatkan kinerja model untuk kelas minoritas.  
-
 	
-
-6. **Data Splitting**
-	- Data Splitting  adalah proses membagi *dataset* menjadi dua atau lebih bagian yang berbeda untuk digunakan dalam tahapan tertentu dari proses analisis data, seperti pelatihan model, validasi model, dan pengujian model.	
-	- Tujuan dari langkah ini adalah pembagian data menjadi menjadi dua bagian: satu untuk melatih model (set pelatihan) dan yang lainnya untuk menguji model (set pengujian).
-	-  Teknik yang digunakan adalah dengan menggunakan metode *Train-test split*.
 
 ## Modeling
 
@@ -195,6 +188,36 @@ Dengan menggunakan confusion matrix, maka dapat diketahui seberapa baik performa
 Berdasarkan dengan konteks data, problem statement, dan solusi yang diimplementasikan, metrik evaluasi yang akan digunakan pada proyek machine learning ini adalah **Recall**. Recall adalah metrik yang digunakan untuk mengukur seberapa baik model dalam memprediksi suatu kelas tertentu. Recall dipilih dengan alasan bahwa algoritma machine learning / model memprediksi seseorang mengalami diabetes tetapi sebenarnya non-diabetes, daripada model salah memprediksi bahwa seseorang non-diabetes padahal sebenarnya dia adalah penderita diabetes.
 
 ###  Training Set Performance
+Train Accuracy Score: 87.52%
+CLASSIFICATION REPORT:
+```
+              precision    recall  f1-score   support
+
+           0       0.87      0.95      0.91       349
+           1       0.89      0.74      0.81       188
+
+    accuracy                           0.88       537
+   macro avg       0.88      0.84      0.86       537
+weighted avg       0.88      0.88      0.87       537
+```
+
+Test Accuracy Score: 74.46%
+CLASSIFICATION REPORT:
+```
+              precision    recall  f1-score   support
+
+           0       0.79      0.83      0.81       151
+           1       0.65      0.57      0.61        80
+
+    accuracy                           0.74       231
+   macro avg       0.72      0.70      0.71       231
+weighted avg       0.74      0.74      0.74       231
+```
+
+
+
+
+###  Training Set Performance (tuning)
 **Accuracy Score:** 98.70%
 
 **Classification Report:**
@@ -225,3 +248,15 @@ weighted avg       0.99      0.99      0.99       537
    macro avg       0.73      0.73      0.73       231
 weighted avg       0.76      0.75      0.75       231
 ```
+
+---
+
+## 🧠 Kesimpulan
+
+* **Tuning model berdampak besar terhadap performa pada data training** — dari 87% ke 98%, menunjukkan bahwa model jadi lebih "paham" terhadap pola data.
+* **Namun pada data test**, kenaikan akurasi hanya sedikit. Artinya:
+
+  * Ada potensi model mulai *overfitting*, belajar terlalu banyak dari data train.
+  * Tapi tetap ada nilai positif: **kemampuan mengenali penderita diabetes meningkat** — ini adalah **tujuan utama** dari model klasifikasi ini.
+
+---
