@@ -235,6 +235,8 @@ CLASSIFICATION REPORT:
    macro avg       0.88      0.84      0.86       537
 weighted avg       0.88      0.88      0.87       537
 ```
+<p align='center'>Gambar 7. Confusion Matrix (Train)</p>
+<p align='center'><img src ="https://raw.githubusercontent.com/Synjoestar/diabetesprediksi/main/images/8.png?raw=true"  width="400"></p>
 
 Test Accuracy Score: 74.46%
 CLASSIFICATION REPORT:
@@ -248,7 +250,8 @@ CLASSIFICATION REPORT:
    macro avg       0.72      0.70      0.71       231
 weighted avg       0.74      0.74      0.74       231
 ```
-
+<p align='center'>Gambar 8. Confusion Matrix (Test)</p>
+<p align='center'><img src ="https://raw.githubusercontent.com/Synjoestar/diabetesprediksi/main/images/9.png?raw=true"  width="400"></p>
 
 
 
@@ -266,7 +269,8 @@ weighted avg       0.74      0.74      0.74       231
    macro avg       0.99      0.98      0.99       537
 weighted avg       0.99      0.99      0.99       537
 ```
-
+<p align='center'>Gambar 9. Confusion Matrix (Train)</p>
+<p align='center'><img src ="https://raw.githubusercontent.com/Synjoestar/diabetesprediksi/main/images/10.png?raw=true"  width="400"></p>
 ---
 
 ###  Test Set Performance
@@ -283,7 +287,8 @@ weighted avg       0.99      0.99      0.99       537
    macro avg       0.73      0.73      0.73       231
 weighted avg       0.76      0.75      0.75       231
 ```
-
+<p align='center'>Gambar 10. Confusion Matrix (Test)</p>
+<p align='center'><img src ="https://raw.githubusercontent.com/Synjoestar/diabetesprediksi/main/images/11.png?raw=true"  width="400"></p>
 ---
 
 ##  Kesimpulan
